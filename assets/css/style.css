@@ -208,7 +208,7 @@ nav .menu a{
 .blog h3{
     grid-column-start: 1;
     grid-column-end: -1;
-    margin-bottom: -10px;
+    margin-bottom: 10px;
 }
 
 .blog .thumbnail{
@@ -234,6 +234,10 @@ nav .menu a{
 @media screen and (max-width: 768px){
     .blog{
         grid-template-columns: 1fr;
+    }
+
+    .container .blog-post{
+        margin-top: -20px;
     }
 }
 
