@@ -36,7 +36,9 @@ p {
     font-size: 1.6rem;
     color: var(--secondary-color);
     line-height: 1.5;
+    text-align: justify;
 }
+
 
 h1{
     font-size: 4rem;

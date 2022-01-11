@@ -1,4 +1,6 @@
-
+.heading-category{
+    color: var(--primary-color);
+}
 /* Hero Section */
 .hero{
     margin-top: 20px;
@@ -203,9 +205,6 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 20px;
-    /* position: relative; */
-    /* margin-top: 36px; */
-    /* background-color: gold; */
     margin: 32px 0;
 }
 
@@ -228,7 +227,6 @@
 .bottom{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    /* background-color: burlywood; */
     margin: -20px 0;
     column-gap: 20px;
 }
@@ -316,6 +314,9 @@
     margin-top: 14rem;
 }
 
+.left-header h4{
+    color: var(--orange);
+}
 .content-header-box span{
     color: var(--orange) ;
 }
@@ -330,7 +331,7 @@
     border: none;
     border-radius: 10px;
     color: white;
-    padding: 10px 24px;
+    padding: 10px 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -441,6 +442,10 @@
         grid-template-columns: 1fr;
     }
 
+    .left-related-news .blog-post{
+        margin-top: -16px;
+    }
+
     .right-header-news .blog-video{
         padding: 0;
     }
@@ -449,4 +454,79 @@
         padding: 0;
     }
 
+}
+
+
+
+
+/* Section Recommendation */
+.recommendation{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 60px;
+    margin-top: 8rem;
+}
+
+.right-recomnd .wrapper .thumb{
+    flex: 1;
+}
+
+.right-recomnd .wrapper .thumb img{
+    border-radius: 15px;
+}
+
+.right-recomnd .wrapper .content{
+    flex: 1;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.right-recomnd .content .category-span{
+    color: var(--orange);
+}
+.right-recomnd .content p{font-weight: 400;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+    line-height: 1.5;
+}
+
+.right-recomnd .content h3{
+    margin: 0.1rem 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .recommendation{
+        grid-template-columns: 1fr;
+        margin-top: 32px;
+        /* background-color: yellow; */
+    }
+
+    /* .container .blog-post{
+        margin-top: -20px;
+    } */
+
+    .right-recomnd .wrapper{
+        margin: 4rem 0;
+    }
+    .right-recomnd img{
+        width: 100%;
+        background: transparent;
+        height: 20%;
+        border-radius: 4px;
+    }
+    .right-recomnd .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+    }
+    .right-recomnd .wrapper .content{
+        padding: 0;
+    }
+    .right-recomnd .wrapper .content h3{
+        margin-top: 2px;
+    }
 }
