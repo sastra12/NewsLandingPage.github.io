@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="share">
-                    <h3>Share :</h3>
+                    <h4>Share :</h4>
                     <div class="icon">
                         <i class="icofont-facebook"></i>
                         <i class="icofont-whatsapp"></i>
@@ -95,10 +95,163 @@
                     </div>
                     <button class="button">View All</button>
                 </div>
+                <div class="right-header-news">
+                    <h3>More News</h3>
+                    <div class="blog-video">
+                        <div class="thumbnail">
+                            <img src="assets/img/destination.jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <span>Travel</span>
+                            <h3>Damar Langit, Tempat Wisata Baru di Puncak Bogor Berpanorama Pegunungan</h3>
+                        </div>
+                    </div>
+                    <div class="blog-video">
+                        <div class="thumbnail">
+                            <img src="assets/img/electricity.jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <span>Government</span>
+                            <h3>Memasok Listrik ke Pulau Terpencil: Bisakah Ebergi Bersih Jadi Solusi?</h3>
+                        </div>
+                    </div>
+                    <div class="blog-video">
+                        <div class="thumbnail">
+                            <img src="assets/img/usa.jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <span>Government</span>
+                            <h3>Taliban wanti-wanti AS Tak Intervensi Konflik Afghanistan</h3>
+                        </div>
+                    </div>
+                    <div class="blog-video">
+                        <div class="thumbnail">
+                            <img src="assets/img/destination.jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <span>Travel</span>
+                            <h3>Damar Langit, Tempat Wisata Baru di Puncak Bogor Berpanorama Pegunungan</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <section class="related-news">
+            <div class="left-related-news">
+                <h3>Related News</h3>
+                <div class="blog-post">
+                    <div class="thumbnail">
+                        <img src="assets/img/meeting.jpg" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <span>Education</span>
+                        <h3>Ojat Darojat Kembali Dilantik Jadi Rektor UT</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dicta atque neque
+                            voluptatem accusantium aliquid eum sunt officiis cum illo!</p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-post">
+                    <div class="thumbnail">
+                        <img src="assets/img/drone.jpg" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <span>Teknologi</span>
+                        <h3>Teknologi Drone</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dicta atque neque
+                            voluptatem accusantium aliquid eum sunt officiis cum illo!</p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-post">
+                    <div class="thumbnail">
+                        <img src="assets/img/marathon.jpg" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <span>Sport</span>
+                        <h3>Hasil Lomba Maraton Olympiade Tokyo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dicta atque neque
+                            voluptatem accusantium aliquid eum sunt officiis cum illo!</p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-post">
+                    <div class="thumbnail">
+                        <img src="assets/img/football.jpg" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <span>Sport</span>
+                        <h3>Jordi Alba Rela Gajinya Dipangkas Barcelona</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dicta atque neque
+                            voluptatem accusantium aliquid eum sunt officiis cum illo!</p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+    <!-- Section Footer -->
+    <footer>
+        <div class="site-container">
+            <div class="footer-class">
+                <div class="footer-1">
+                    <h3>NewsID.com</h3>
+                    <p>Jln Genteng Raya No 4-5, Surabaya Indonesia</p>
+                    <div class="social-icons">
+                        <i class="icofont-facebook"></i>
+                        <i class="icofont-instagram"></i>
+                        <i class="icofont-twitter"></i>
+                        <i class="icofont-linkedin"></i>
+                    </div>
+                </div>
+                <div class="footer-2">
+                    <h3>Support</h3>
+                    <p>Account</p>
+                    <p>Legal</p>
+                    <p>Afilliate Progam</p>
+                    <p>Contact</p>
+                    <p>Stories</p>
+                </div>
+                <div class="footer-3">
+                    <h3>Service</h3>
+                    <p>Featured</p>
+                    <p>Pricing</p>
+                    <p>Free Masterclass</p>
+                    <p>Compare Us</p>
+                    <p>Careers</p>
+                </div>
+                <div class="footer-4">
+                    <h3>About</h3>
+                    <p>Product</p>
+                    <p>Resource</p>
+                    <p>Blog</p>
+                    <p>Stories</p>
+                    <p>FAQ</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <h4>&copy; Copyright 2021 Sastra R</h4>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const mobileMenu = document.querySelector('.mobile-menu');
+        // console.log(mobileMenu);
+        const menu = document.querySelector('.menu');
+        // console.log(menu);
+        mobileMenu.addEventListener('click', function () {
+            menu.classList.toggle('show');
+        })
+    </script>
+</body>
+
+</html>
 </body>
 
 </html>
