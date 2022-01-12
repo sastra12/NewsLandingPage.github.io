@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icofont -->
     <link rel="stylesheet" href="icofont/icofont.min.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- My CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <title>Document</title>
@@ -135,7 +141,7 @@
         <div class="container">
             <div class="headlines">
                 <h3 class="heading-category">Headlines</h3>
-                <div class="left">
+                <div class="left" data-aos="fade-left" data-aos-delay="300" data-aos-duration="2000">
                     <div class="thum">
                         <img src="assets/img/VR.jpg" alt="">
                     </div>
@@ -149,7 +155,7 @@
                         <a href="">Read More</a>
                     </div>
                 </div>
-                <div class="right">
+                <div class="right" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                     <div class="wrapper">
                         <div class="thumb">
                             <img src="assets/img/market.jpg" alt="">
@@ -186,7 +192,7 @@
         </div>
 
         <!-- Special Topic -->
-        <div class="topic-container">
+        <div class="topic-container" data-aos="fade-up-right" data-aos-duration="2000">
             <div class="blog">
                 <h3 class="heading-topic">Special Topic</h3>
                 <div class="blog-post">
@@ -232,11 +238,11 @@
 
         <!-- Section Video -->
         <div class="container">
-            <div class="top">
+            <div class="top" data-aos="fade-down" data-aos-duration="1000">
                 <h3 class="heading-category">Video</h3>
                 <div class="left">
                     <div class="thum">
-                        <img src="assets/img/polutions.jpg" alt="">
+                        <img src="assets/img/polutions.jpg" alt="" class="image-top">
                     </div>
                 </div>
                 <div class="right">
@@ -250,7 +256,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bottom">
+            <div class="bottom" data-aos="fade-up-right" data-aos-duration="2000">
                 <div class="blog-video">
                     <div class="thumbnail">
                         <img src="assets/img/destination.jpg" alt="">
@@ -354,7 +360,10 @@
         </div>
     </footer>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         const mobileMenu = document.querySelector('.mobile-menu');
         // console.log(mobileMenu);

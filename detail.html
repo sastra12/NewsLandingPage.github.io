@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="icofont/icofont.min.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- My CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <title>Document</title>
@@ -96,7 +101,7 @@
                     </div>
                     <button class="button">View All</button>
                 </div>
-                <div class="right-header-news">
+                <div class="right-header-news" data-aos="fade-down" data-aos-duration="2000">
                     <h3>More News</h3>
                     <div class="blog-video">
                         <div class="thumbnail">
@@ -140,7 +145,7 @@
 
         <!-- Related News -->
         <section class="related-news">
-            <div class="left-related-news">
+            <div class="left-related-news" data-aos="fade-left" data-aos-duration="2000">
                 <h3 class="heading-category">Related News</h3>
                 <div class="blog-post">
                     <div class="thumbnail">
@@ -198,7 +203,7 @@
 
         <!-- Recommendation -->
         <section class="recommendation">
-            <div class="right-recomnd">
+            <div class="right-recomnd" data-aos="fade-right" data-aos-delay="300" data-aos-duration="2000">
                 <h3 class="heading-category">Recommended</h3>
                 <div class="wrapper">
                     <div class="thumb">
@@ -252,7 +257,7 @@
                     </div>
                 </div>
             </div>
-            <div class="left-recomnd">
+            <div class="left-recomnd" data-aos="fade-left" data-aos-delay="300" data-aos-duration="2000">
                 <div class="content-box">
                     <h3 class="heading-category">Most Read</h3>
                     <div class="content-header-box">
@@ -325,6 +330,10 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script>
         const mobileMenu = document.querySelector('.mobile-menu');
