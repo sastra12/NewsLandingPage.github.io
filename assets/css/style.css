@@ -107,13 +107,24 @@
 
 @media screen and (max-width: 768px){
     .blog{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    body{
+        overflow-x: hidden;
     }
 
     .container .blog-post{
         margin-top: -20px;
     }
 }
+
+@media screen and (max-width: 576px){
+    .blog{
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* Headlines Section */
 .headlines{
@@ -177,7 +188,7 @@
     .wrapper .content{
         padding: 6px;
     }
-
+    
 }
 
 
@@ -351,7 +362,7 @@
   }
 
 .share{
-    display: flex;
+    display: flex; 
     border: 0.5px solid rgba(192,192,192,0.2);
     border-radius: 3px;
     align-items: center;
@@ -399,7 +410,7 @@
     }
   }
 
-
+  
 /* Section Related News */
 .related-news{
     display: grid;
@@ -463,7 +474,7 @@
     .right-header-news .blog-content{
         padding: 0;
     }
-
+    
 }
 
 
@@ -506,7 +517,7 @@
 .right-recomnd .content h3{
     margin: 0.1rem 0;
 }
-
+    
 
 @media screen and (max-width: 768px) {
     .recommendation{
