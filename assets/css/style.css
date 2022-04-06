@@ -62,10 +62,6 @@
 
 
 /* Blog Section */
-.container {
-    width: 100%;
-}
-
 .blog {
     margin-top: 40px;
     /* background-color: hotpink; */
@@ -201,6 +197,10 @@ a {
 
     .wrapper .content {
         padding: 6px;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 
 }
