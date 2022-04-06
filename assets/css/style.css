@@ -1,3 +1,8 @@
+body,
+html {
+    overflow-x: hidden;
+}
+
 .heading-category {
     color: var(--primary-color);
 }
@@ -5,7 +10,6 @@
 /* Hero Section */
 .hero {
     margin-top: 20px;
-    /* background-color: red; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
@@ -20,13 +24,12 @@
     background-position: center;
     height: auto;
     background-size: cover;
-    /* background-color: gold; */
+
 }
 
 
 .right img {
     border-radius: 15px;
-    /* height: 50vh; */
 }
 
 @media screen and (max-width: 768px) {
@@ -35,14 +38,11 @@
     }
 
     .hero .right {
-        /* background-color: gold; */
-        /* margin-top: 28px; */
         grid-column-start: 1;
         grid-column-end: -1;
         grid-row-start: 1;
         grid-row-end: 2;
         height: auto;
-        /* align-self: center; */
     }
 
     .hero .left {
@@ -50,8 +50,6 @@
         grid-column-end: -1;
         grid-row-start: 2;
         grid-row-end: 3;
-        /* background-color: ghostwhite; */
-        /* align-self: flex-start; */
     }
 
     .hero .left h4 {
@@ -102,15 +100,18 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    /* 
     body {
         overflow-x: hidden;
-    } */
+    }
 }
 
 @media screen and (max-width: 768px) {
     .blog {
         grid-template-columns: 1fr 1fr;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 
     .blog-post {
@@ -123,9 +124,9 @@
         grid-template-columns: 1fr;
     }
 
-    /* body {
+    body {
         overflow-x: hidden;
-    } */
+    }
 }
 
 
@@ -145,6 +146,7 @@
 
 .left .thum {
     object-fit: contain;
+    /* height: 40vh; */
 }
 
 .thum img {
